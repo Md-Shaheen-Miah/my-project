@@ -3,6 +3,7 @@ import React from 'react';
 import { Box, Drawer, List, ListItem, ListItemText, ListItemIcon, Collapse } from '@mui/material';
 import { ExpandLess, ExpandMore, Home,Store, ShoppingCart, Settings } from '@mui/icons-material';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   const [open, setOpen] = useState({
@@ -27,16 +28,20 @@ const Sidebar = () => {
     <Drawer
       variant="permanent"
       sx={{
+       
         width: 240,
         flexShrink: 0,
         '& .MuiDrawer-paper': {
           width: 240,
           boxSizing: 'border-box',
+          marginTop:7,
+        
+
         },
       }}
     >
       <Box sx={{ overflow: 'auto' }}>
-        <List style={{color:'red', backgroundColor:'black'}}>
+        <List style={{color:'#ffffff', backgroundColor:'black',height:"100vh"}}>
           <ListItem button>
             <ListItemIcon>
               <Home />
@@ -49,7 +54,7 @@ const Sidebar = () => {
               <Store />
             </ListItemIcon>
             <ListItemText primary="Sales" />
-            {open.Sales ? <ExpandLess  /> : <ExpandMore style={{color:'red'}} />}
+            {open.Sales ? <ExpandLess  /> : <ExpandMore />}
           </ListItem>
           <Collapse in={open.Sales} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -72,7 +77,7 @@ const Sidebar = () => {
           <Collapse in={open.Products} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Product List" />
+               <NavLink to="/Product_List"> <ListItemText primary="Product_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
                 <ListItemText primary="Add New Product" />
@@ -110,8 +115,9 @@ const Sidebar = () => {
           </ListItem>
           <Collapse in={open.Supplier} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Supplier List" />
+              <ListItem button  sx={{ pl: 4 }}>
+                <NavLink to="/Supplier_List"> <ListItemText primary="Supplier_List" /></NavLink>
+               
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
                 <ListItemText primary="Add New Supplier" />

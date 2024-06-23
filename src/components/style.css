@@ -1,131 +1,69 @@
+/* footer css start*/
 
-
-.menu{
-    background-color: #472882;
-  
-   
-}
-
-.test{
-    color: white !important;
-}
-#navbarScrollingDropdown{
-    color: white;
-   
-    
-}
-
-
-
-/*footer css start*/
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-text {
-    margin: 0;
-    font-size: 20px;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-links li {
-    margin: 0 15px;
-  }
-  
-  .footer-links li {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-links li:hover {
-    color: #1e90ff;
-  }
-  /*footer css end*/
-
-  /* contact css start */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.contact-container h1 {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
 }
 
-.contact-form {
+.footer-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.form-group {
+.footer-section {
+  margin: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
   margin-bottom: 15px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.footer-section ul li {
+  margin-bottom: 10px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
+.footer-section ul li a {
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-button:hover {
-  background-color: #0056b3;
+.footer-section ul li a:hover {
+  text-decoration: underline;
 }
 
-/*contact css end */
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+ 
+
+
+/* footer css end*/ 
+
+.bg-body{
+  background-color: black !important;
+}

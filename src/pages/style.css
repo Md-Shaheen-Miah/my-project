@@ -66,4 +66,122 @@
   }
   
   /*contact css end */
+
+  /* src/SupplierTable.css */
+.table-container {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.supplier-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.supplier-table th,
+.supplier-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.supplier-table th {
+  background-color: #f8f8f8;
+  color: #555555;
+}
+
+.supplier-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.supplier-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.supplier-table th:first-child,
+.supplier-table td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.supplier-table th:last-child,
+.supplier-table td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+/* supplyer css end */
+
+/* product page css start*/
+.product-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+.product-image {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #e60023;
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e60023;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #cc001f;
+}
+
+/* product page css end*/
   
