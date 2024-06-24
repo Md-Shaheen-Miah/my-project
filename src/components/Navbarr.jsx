@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,7 +29,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
           <Nav>
             <Nav.Link style={{color:'#ffffff'}} href="#deets">More deets</Nav.Link>
             <Nav.Link style={{color:'#ffffff'}} eventKey={2} href="#memes">
-              Dank memes
+              Login
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

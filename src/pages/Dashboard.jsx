@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // Inline CSS styles
 const styles = {
     
@@ -49,6 +50,7 @@ const Dashboard = () => {
         <div style={styles.card}>
           <div style={styles.cardHeader}>Card 1</div>
           <div style={styles.cardContent}>Content for card 1.</div>
+        
         </div>
         <div style={styles.card}>
           <div style={styles.cardHeader}>Card 2</div>

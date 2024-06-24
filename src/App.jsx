@@ -10,7 +10,13 @@ import Add_New_Customer from './pages/Add_New_Customer';
 import Staff_List from './pages/Staff_List';
 import Add_New_Staff from './pages/Add_New_Staff';
 import Dashboard from './pages/Dashboard';
+import Electronics from './pages/Electronics';
+import Clothing from './pages/Clothing';
+import Beauty_Product from './pages/Beauty_Product';
+import Furniture from './pages/Furniture';
+import Sporting_Goods from './pages/Sporting_Goods'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 
 
 
@@ -30,6 +36,12 @@ const App = () => {
         <Route  path="/Staff_List" element={<Staff_List/>} />
         <Route  path="/Add_New_Staff" element={<Add_New_Staff/>} />
         <Route  path="/Dashboard" element={<Dashboard/>} />
+        <Route  path="/Electronics" element={< Electronics/>} />
+        <Route  path="/Clothing" element={<Clothing/>} />
+        <Route  path="/Beauty_Product" element={<Beauty_Product/>} />
+        <Route  path="/Furniture" element={<Furniture/>} />
+        <Route  path="/Sporting_Goods" element={<Sporting_Goods/>} />
+        
 
         </Routes>
         <Footer/>

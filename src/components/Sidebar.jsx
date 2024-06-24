@@ -99,14 +99,21 @@ const Sidebar = () => {
           <Collapse in={open.Categories} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Product_List"> <ListItemText primary="Product_List" /></NavLink>
+               <NavLink to="/Electronics"> <ListItemText primary="Electronics" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Add New Product" />
+               <NavLink to="/Clothing"> <ListItemText primary="Clothing" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Inventory" />
+               <NavLink to="/Beauty_Product"> <ListItemText primary="Beauty_Product" /></NavLink>
               </ListItem>
+              <ListItem button sx={{ pl: 4 }}>
+               <NavLink to="/Furniture"> <ListItemText primary="Furniture" /></NavLink>
+              </ListItem>
+              <ListItem button sx={{ pl: 4 }}>
+               <NavLink to="/Sporting_Goods"> <ListItemText primary="Sporting_Goods" /></NavLink>
+              </ListItem>
+              
             </List>
           </Collapse>
           
