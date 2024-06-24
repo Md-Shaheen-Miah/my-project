@@ -1,159 +1,85 @@
-import React from 'react'
-import './style.css';
+import React from 'react';
 
-const Product_List = () => {
+const Product_List= () => {
+  const products = [
+    {
+      name: 'Square POS',
+      description: 'A powerful POS system for retail and restaurants.',
+      price: '$60/month'
+    },
+    {
+      name: 'Shopify POS',
+      description: 'An integrated POS system for Shopify users.',
+      price: '$89/month'
+    },
+    {
+      name: 'Vend POS',
+      description: 'A cloud-based POS system for retailers.',
+      price: '$99/month'
+    },
+    {
+      name: 'Lightspeed POS',
+      description: 'A versatile POS system for various industries.',
+      price: '$69/month'
+    }
+  ];
+
   return (
-<div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car1.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
+    <div style={styles.container}>
+      <h1 style={styles.heading}>POS Software Products</h1>
+      <ul style={styles.productList}>
+        {products.map((product, index) => (
+          <li key={index} style={styles.productItem}>
+            <h2 style={styles.productName}>{product.name}</h2>
+            <p style={styles.productDescription}>{product.description}</p>
+            <p style={styles.productPrice}>{product.price}</p>
+          </li>
+        ))}
+      </ul>
     </div>
+  );
+};
 
-  <div className="product-page">
-  <div className="product-image">
-    <img src="src/components/Images/car2.jpg" alt="Product" />
-  </div>
-  <div className="product-details">
-    <h1 className="product-title">Product Name</h1>
-    <p className="product-description">
-      This is a short description of the product. It highlights the key features and benefits of the product.
-    </p>
-    <p className="product-price">$99.99</p>
-    <button className="add-to-cart-button">Add to Cart</button>
-  </div>
-</div>
-
-<div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car3.webp" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car5.avif" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car6.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car8.webp" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car9.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car10.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car11.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car12.jpg" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-    <div className="product-page">
-            <div className="product-image">
-            <img src="src/components/Images/car13.webp" alt="Product" />
-            </div>
-        <div className="product-details">
-            <h1 className="product-title">Product Name</h1>
-            <p className="product-description">
-            This is a short description of the product. It highlights the key features and benefits of the product.
-            </p>
-            <p className="product-price">$99.99</p>
-             <button className="add-to-cart-button">Add to Cart</button>
-        </div>
-    </div>
-
-
-</div>
-  )
-}
+const styles = {
+  container: {
+    fontFamily: 'Arial, sans-serif',
+    maxWidth: '600px',
+    margin: '0 auto',
+    padding: '20px',
+    backgroundColor: '#f9f9f9',
+    borderRadius: '8px',
+    boxShadow: '0 0 10px rgba(0,0,0,0.1)'
+  },
+  heading: {
+    textAlign: 'center',
+    color: '#333',
+    marginBottom: '20px'
+  },
+  productList: {
+    listStyleType: 'none',
+    padding: '0'
+  },
+  productItem: {
+    backgroundColor: '#fff',
+    marginBottom: '15px',
+    padding: '15px',
+    borderRadius: '5px',
+    boxShadow: '0 0 5px rgba(0,0,0,0.1)'
+  },
+  productName: {
+    margin: '0 0 10px 0',
+    fontSize: '1.5em',
+    color: '#333'
+  },
+  productDescription: {
+    margin: '0 0 10px 0',
+    color: '#666'
+  },
+  productPrice: {
+    margin: '0',
+    fontWeight: 'bold',
+    color: '#009688'
+  }
+};
 
 export default Product_List;

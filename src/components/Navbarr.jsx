@@ -7,12 +7,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body"style={{position:'fixed',width:'100%'}}>
       <Container style={{}}>
-        <Navbar.Brand style={{color:'#ffffff'}} href="#home">Pos Software</Navbar.Brand>
+        <Navbar.Brand style={{color:'#ffffff'}} href="#home">SUPER SHOP</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link style={{color:'#ffffff'}} href="#features">Features</Nav.Link>
-            <Nav.Link style={{color:'#ffffff'}} href="#pricing">Pricing</Nav.Link>
+            <Nav.Link style={{color:'#ffffff'}} href="#features">#</Nav.Link>
+            <Nav.Link style={{color:'#ffffff'}} href="#pricing">#</Nav.Link>
             <NavDropdown style={{color:'#ffffff'}} title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item style={{color:'#ffffff'}} href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

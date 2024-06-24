@@ -9,11 +9,12 @@ const Sidebar = () => {
   const [open, setOpen] = useState({
     Sales: false,
     Products: false,
+    Categories: false,
     Customers: false,
     Supplier: false,
     Purchases: false,
     Staff: false,
-    Billing: false,
+    
     Reports: false,
   });
 
@@ -41,12 +42,12 @@ const Sidebar = () => {
       }}
     >
       <Box sx={{ overflow: 'auto' }}>
-        <List style={{color:'#ffffff', backgroundColor:'black',height:"100vh"}}>
+        <List style={{color:'#ffffff', backgroundColor:'#0E112A',height:"100vh"}}>
           <ListItem button>
             <ListItemIcon>
               <Home />
             </ListItemIcon>
-            <ListItemText primary="Dashboard" />
+            <NavLink to="/Dashboard"><ListItemText primary="Dashboard" /></NavLink>
           </ListItem>
           
           <ListItem button onClick={() => handleClick('Sales')}>
@@ -87,6 +88,27 @@ const Sidebar = () => {
               </ListItem>
             </List>
           </Collapse>
+
+          <ListItem button onClick={() => handleClick('Categories')}>
+            <ListItemIcon>
+              <ShoppingCart />
+            </ListItemIcon>
+            <ListItemText primary="Categories" />
+            {open.Categories? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+          <Collapse in={open.Categories} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItem button sx={{ pl: 4 }}>
+               <NavLink to="/Product_List"> <ListItemText primary="Product_List" /></NavLink>
+              </ListItem>
+              <ListItem button sx={{ pl: 4 }}>
+                <ListItemText primary="Add New Product" />
+              </ListItem>
+              <ListItem button sx={{ pl: 4 }}>
+                <ListItemText primary="Inventory" />
+              </ListItem>
+            </List>
+          </Collapse>
           
           <ListItem button onClick={() => handleClick('Customers')}>
             <ListItemIcon>
@@ -98,10 +120,10 @@ const Sidebar = () => {
           <Collapse in={open.Customers} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Customer List" />
+                <NavLink to="/Customer_List"><ListItemText primary="Customer_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Add New Customer" />
+                <NavLink to="/Add_New_Customer"><ListItemText primary="Add_New_Customer" /></NavLink>
               </ListItem>
             </List>
           </Collapse>
@@ -153,32 +175,16 @@ const Sidebar = () => {
           <Collapse in={open.Staff} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Staff List" />
+
+                <NavLink to="/Staff_List"><ListItemText primary="Staff_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Add New Staff" />
+               <NavLink to="/Add_New_Staff"> <ListItemText primary="Add_New_Staff" /></NavLink>
               </ListItem>
             </List>
           </Collapse>
 
-          <ListItem button onClick={() => handleClick('Billing')}>
-            <ListItemIcon>
-              <Settings />
-            </ListItemIcon>
-            <ListItemText primary="Billing" />
-            {open.Billing? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse in={open.Billing} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Creat Invoice" />
-              </ListItem>
-              <ListItem button sx={{ pl: 4 }}>
-                <ListItemText primary="Billing Report" />
-              </ListItem>
-            </List>
-          </Collapse>
-
+          
           <ListItem button onClick={() => handleClick('Reports')}>
             <ListItemIcon>
               <Settings />
