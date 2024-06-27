@@ -18,22 +18,22 @@ const Dashboard = () => {
           <h2>Beauty Product Categorie</h2>
           <div className="products">
             <div className="product-card">
-              <img src="https://via.placeholder.com/150" alt="Product 1" />
+              <img src="src/pages/Beauty-img/skincare.avif" alt="" />
               <h3>Skincare</h3>
               <NavLink>More</NavLink>
             </div>
             <div className="product-card">
-              <img src="https://via.placeholder.com/150" alt="Product 1" />
+              <img src="src/pages/Beauty-img/makeup.jpg" alt="" />
               <h3>Makeup</h3>
               <NavLink>More</NavLink>
             </div>
             <div className="product-card">
-              <img src="https://via.placeholder.com/150" alt="Product 2" />
+              <img src="src/pages/Beauty-img/haircare.jpg" alt="" />
               <h3>Haircare</h3>
               <NavLink>More</NavLink>
             </div>
             <div className="product-card">
-              <img src="https://via.placeholder.com/150" alt="Product 3" />
+              <img src="src/pages/Beauty-img/nailcare.webp" alt="" />
               <h3>Nailcare</h3>
               <NavLink>More</NavLink>
             </div>
