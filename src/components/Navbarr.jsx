@@ -1,40 +1,78 @@
-import React from 'react'
-import { NavLink } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
- const Navbarr = () => {
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+const Navbar = () => {
+  const styles = {
+    navbar: {
+      position:'fixed',
+      width:'100%',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '10px 20px',
+      backgroundColor: '#333',
+      color: '#fff',
+    },
+    navBrand: {
+      fontSize: '24px',
+      fontWeight: 'bold',
+    },
+    navLinks: {
+      display: 'flex',
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+    },
+    navLink: {
+      marginLeft: '15px',
+      textDecoration: 'none',
+      color: '#fff',
+      fontSize: '18px',
+    },
+    activeNavLink: {
+      color: '#4CAF50',
+    },
+  };
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body"style={{position:'fixed',width:'100%'}}>
-      <Container style={{}}>
-        <Navbar.Brand style={{color:'#ffffff'}} href="#home">SUPER SHOP</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link style={{color:'#ffffff'}} href="#features">#</Nav.Link>
-            <Nav.Link style={{color:'#ffffff'}} href="#pricing">#</Nav.Link>
-            <NavDropdown style={{color:'#ffffff'}} title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item style={{color:'#ffffff'}} href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item style={{color:'#ffffff'}} href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item style={{color:'#ffffff'}} href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link style={{color:'#ffffff'}} href="#deets">More deets</Nav.Link>
-            <Nav.Link style={{color:'#ffffff'}} eventKey={2} href="#memes">
-              Login
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  )
-}
-export default Navbarr;
+    <nav style={styles.navbar}>
+      <div style={styles.navBrand}>React Project</div>
+      <ul style={styles.navLinks}>
+        <li>
+          <NavLink
+            to="/Dashboard"
+            exact
+            style={styles.navLink}
+            activeStyle={styles.activeNavLink}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/Login"
+            style={styles.navLink}
+            activeStyle={styles.activeNavLink}
+          >
+            Login
+          </NavLink>
+        </li>
+        
+      </ul>
+      <ul style={{listStyle:'none',display:'flex',margin:'0',padding:'0'}}>
+      <li>
+          <NavLink
+            to="/Profile"
+            style={styles.navLink}
+            activeStyle={styles.activeNavLink}
+          >
+            <img style={{width:'20px',borderRadius:'100%'}} src="src/components/images/shaheen.jpg" alt="" />
+            Admin
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

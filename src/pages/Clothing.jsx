@@ -20,22 +20,22 @@ const Dashboard = () => {
             <div className="product-card">
               <img src="src/pages/Clothing-img/shirt.jpg" alt="" />
               <h3>Shirts</h3>
-              <NavLink>More</NavLink>
+              <NavLink  style={{textDecoration:'none',color:'black'}}>More</NavLink>
             </div>
             <div className="product-card">
               <img src="src/pages/Clothing-img/pant.jfif" alt="" />
               <h3>Pants</h3>
-              <NavLink>More</NavLink>
+              <NavLink  style={{textDecoration:'none',color:'black'}}>More</NavLink>
             </div>
             <div className="product-card">
               <img src="src/pages/Clothing-img/jacket.jfif" alt="" />
               <h3>Jackets</h3>
-              <NavLink>More</NavLink>
+              <NavLink  style={{textDecoration:'none',color:'black'}}>More</NavLink>
             </div>
             <div className="product-card">
               <img src="src/pages/Clothing-img/shoe.webp" alt="" />
               <h3>Shoes</h3>
-              <NavLink>More</NavLink>
+              <NavLink  style={{textDecoration:'none',color:'black'}}>More</NavLink>
             </div>
           </div>
         </section>

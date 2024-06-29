@@ -42,12 +42,12 @@ const Sidebar = () => {
       }}
     >
       <Box sx={{ overflow: 'auto' }}>
-        <List style={{color:'#ffffff', backgroundColor:'#0E112A',height:"100vh"}}>
+        <List style={{color:'#ffffff', backgroundColor:'#333',height:"100vh"}}>
           <ListItem button>
             <ListItemIcon>
               <Home />
             </ListItemIcon>
-            <NavLink to="/Dashboard"><ListItemText primary="Dashboard" /></NavLink>
+            <NavLink style={{textDecoration:'none',color:'#ffffff'}} to="/Dashboard"><ListItemText primary="Dashboard" /></NavLink>
           </ListItem>
           
           <ListItem button onClick={() => handleClick('Sales')}>
@@ -78,7 +78,7 @@ const Sidebar = () => {
           <Collapse in={open.Products} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Product_List"> <ListItemText primary="Product_List" /></NavLink>
+               <NavLink  style={{textDecoration:'none',color:'#ffffff'}} to="/Product_List"> <ListItemText primary="Product_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
                 <ListItemText primary="Add New Product" />
@@ -99,19 +99,19 @@ const Sidebar = () => {
           <Collapse in={open.Categories} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Electronics"> <ListItemText primary="Electronics" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Electronics"> <ListItemText primary="Electronics" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Clothing"> <ListItemText primary="Clothing" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Clothing"> <ListItemText primary="Clothing" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Beauty_Product"> <ListItemText primary="Beauty_Product" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Beauty_Product"> <ListItemText primary="Beauty_Product" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Furniture"> <ListItemText primary="Furniture" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Furniture"> <ListItemText primary="Furniture" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Sporting_Goods"> <ListItemText primary="Sporting_Goods" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Sporting_Goods"> <ListItemText primary="Sporting_Goods" /></NavLink>
               </ListItem>
               
             </List>
@@ -127,10 +127,10 @@ const Sidebar = () => {
           <Collapse in={open.Customers} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
-                <NavLink to="/Customer_List"><ListItemText primary="Customer_List" /></NavLink>
+                <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Customer_List"><ListItemText primary="Customer_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-                <NavLink to="/Add_New_Customer"><ListItemText primary="Add_New_Customer" /></NavLink>
+                <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Add_New_Customer"><ListItemText primary="Add_New_Customer" /></NavLink>
               </ListItem>
             </List>
           </Collapse>
@@ -145,7 +145,7 @@ const Sidebar = () => {
           <Collapse in={open.Supplier} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button  sx={{ pl: 4 }}>
-                <NavLink to="/Supplier_List"> <ListItemText primary="Supplier_List" /></NavLink>
+                <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Supplier_List"> <ListItemText primary="Supplier_List" /></NavLink>
                
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
@@ -183,10 +183,10 @@ const Sidebar = () => {
             <List component="div" disablePadding>
               <ListItem button sx={{ pl: 4 }}>
 
-                <NavLink to="/Staff_List"><ListItemText primary="Staff_List" /></NavLink>
+                <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Staff_List"><ListItemText primary="Staff_List" /></NavLink>
               </ListItem>
               <ListItem button sx={{ pl: 4 }}>
-               <NavLink to="/Add_New_Staff"> <ListItemText primary="Add_New_Staff" /></NavLink>
+               <NavLink style={{textDecoration:'none',color:'#ffffff'}}  to="/Add_New_Staff"> <ListItemText primary="Add_New_Staff" /></NavLink>
               </ListItem>
             </List>
           </Collapse>
@@ -215,7 +215,7 @@ const Sidebar = () => {
               </ListItem>
             </List>
           </Collapse>
-          <button style={{marginLeft:'70px',borderRadius:'10px'}}>Logout</button>
+         
           
         </List>
       </Box>

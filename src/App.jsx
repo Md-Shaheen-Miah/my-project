@@ -16,6 +16,9 @@ import Beauty_Product from './pages/Beauty_Product';
 import Furniture from './pages/Furniture';
 import Sporting_Goods from './pages/Sporting_Goods'
 import Phones from './Categories/Phones';
+import Registration from './pages/Registration';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -43,6 +46,9 @@ const App = () => {
         <Route  path="/Furniture" element={<Furniture/>} />
         <Route  path="/Sporting_Goods" element={<Sporting_Goods/>} />
         <Route  path="/Phones" element={<Phones/>} />
+        <Route  path="/Registration" element={<Registration/>} />
+        <Route  path="/Login" element={<Login/>} />
+        <Route  path="/Profile" element={<Profile/>} />
     
         
 
