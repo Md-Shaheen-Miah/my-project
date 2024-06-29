@@ -21,7 +21,7 @@ import './style.css';
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/Dashboard">Home</a></li>
+            <li><a href="/Home">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
@@ -31,13 +31,13 @@ import './style.css';
           <h4>Follow Us</h4>
           <div className="social-icons">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="src/components/images/facebook.png" alt="Facebook" />
+              <img src="src/components/images/facebook.webp" alt="Facebook" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src="src/components/images/twiter.png" alt="Twitter" />
+              <img src="src/components/images/Twitter.png" alt="Twitter" />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="src/components/images/instragram.avif" alt="Instagram" />
+              <img src="src/components/images/instagram.avif" alt="Instagram" />
             </a>
           </div>
         </div>

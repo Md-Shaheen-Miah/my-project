@@ -40,7 +40,7 @@ const Navbar = () => {
       <ul style={styles.navLinks}>
         <li>
           <NavLink
-            to="/Dashboard"
+            to="/Home"
             exact
             style={styles.navLink}
             activeStyle={styles.activeNavLink}

@@ -47,7 +47,7 @@ const Sidebar = () => {
             <ListItemIcon>
               <Home />
             </ListItemIcon>
-            <NavLink style={{textDecoration:'none',color:'#ffffff'}} to="/Dashboard"><ListItemText primary="Dashboard" /></NavLink>
+            <NavLink style={{textDecoration:'none',color:'#ffffff'}} to="/Home"><ListItemText primary="Dashboard" /></NavLink>
           </ListItem>
           
           <ListItem button onClick={() => handleClick('Sales')}>

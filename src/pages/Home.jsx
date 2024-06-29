@@ -3,7 +3,7 @@ import React from 'react';
 import { Line, Bar, Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 
-const Dashboard = () => {
+const Home = () => {
   const cardStyle = {
     backgroundColor:'#efdfbb',
     border: '1px solid #ddd',
@@ -131,4 +131,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Home;
