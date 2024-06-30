@@ -62,7 +62,7 @@ const App = () => {
           <h2 style={nameStyle}>{product.name}</h2>
           <p style={descriptionStyle}>{product.description}</p>
           <p style={priceStyle}>{product.price}</p>
-          <button>Buy Now</button>
+          <button>ADD TO CARD</button>
         </div>
       ))}
     </div>

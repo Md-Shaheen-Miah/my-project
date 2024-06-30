@@ -28,7 +28,7 @@ const Add_New_Customer = () => {
    
     display: 'flex',
     flexDirection: 'column',
-    width: '600px',
+    width: '100%',
     margin: '0 auto',
     padding: '30px',
     border: '2px solid #ddd',
